@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <!-- Calculator Header -->
+        <div class="header">
+            <div>
+                <h1>Calculator</h1>
+                <p>Simple • Fast • Accurate</p>
+            </div>
+
+            <button id="themeBtn" class="theme-btn">☀</button>
+        </div>
+
+        <!-- Display -->
+        <div class="display-container">
+
+            <div id="previousDisplay" class="previous-display"></div>
+
+            <input
+                type="text"
+                id="display"
+                class="display"
+                value="0"
+                readonly
+            >
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button class="button function" data-action="clear">AC</button>
+            <button class="button function" data-action="delete">DEL</button>
+            <button class="button operator" data-value="%">%</button>
+            <button class="button operator" data-value="/">÷</button>
+
+            <button class="button number" data-value="7">7</button>
+            <button class="button number" data-value="8">8</button>
+            <button class="button number" data-value="9">9</button>
+            <button class="button operator" data-value="*">×</button>
+
+            <button class="button number" data-value="4">4</button>
+            <button class="button number" data-value="5">5</button>
+            <button class="button number" data-value="6">6</button>
+            <button class="button operator" data-value="-">−</button>
+
+            <button class="button number" data-value="1">1</button>
+            <button class="button number" data-value="2">2</button>
+            <button class="button number" data-value="3">3</button>
+            <button class="button operator" data-value="+">+</button>
+
+            <button class="button number zero" data-value="0">0</button>
+            <button class="button number" data-value=".">.</button>
+            <button class="button equals" data-action="calculate">=</button>
+
+        </div>
+
+        <!-- History -->
+        <div class="history-section">
+
+            <div class="history-header">
+                <h2>History</h2>
+                <button id="clearHistory">Clear</button>
+            </div>
+
+            <div id="historyList" class="history-list">
+                <p class="empty-history">No calculations yet</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
